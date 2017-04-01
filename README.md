@@ -8,7 +8,7 @@ author: lindydonna
 
 This is a sample HTTP trigger Azure Function that returns a SAS token for Azure Storage for the specified container, blob, and permissions. A SAS token provides a secure way for client apps to access particular storage account resources, without giving them the full control of the storage access key.
 
-##Deploy to Azure
+## Deploy to Azure
 
 The automated deployment provisions an Azure Storage account and an Azure Function in a Dynamic compute plan and sets up deployment from source control. 
 
@@ -24,7 +24,7 @@ A SAS token is usually generated server-side, using the account access key and t
 
 If the function will be called from a mobile client or a JavaScript web app, we recommend that you add authentication to your Function using [App Service Authentication/Authorization](https://azure.microsoft.com/en-us/documentation/articles/app-service-authentication-overview/). The API key is usually insufficent for security purposes since it can be discovered by sniffing traffic or decompiling the client app.
 
-##Calling the function
+## Calling the function
 
 To request a SAS token, send an HTTP POST to your function URI, including the API key if you've specified one. The request body format is:
 
